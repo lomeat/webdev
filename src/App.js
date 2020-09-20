@@ -1,17 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
+import { FirstSection } from "./FirstSection";
+
 export const App = () => {
   return (
-    <S_Wrapper>
-      <S_Container></S_Container>
-    </S_Wrapper>
+    <Wrapper>
+      <FirstSection />
+    </Wrapper>
   );
 };
 
-const S_Wrapper = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 `;
-
-const S_Container = styled.div``;
