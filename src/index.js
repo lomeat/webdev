@@ -6,19 +6,19 @@ import "normalize.css";
 
 import { App } from "./App";
 
-const GlobalStyle = createGlobalStyle`
-  * {
-    outline: none;
-    box-sizing: border-box;
-    font-family: "Roboto:400,600,700,800", sans-serif;
-  }
-`;
-
 WebFont.load({
   google: {
-    families: ["Roboto"],
+    families: ["Roboto:400,600,700,800"],
   },
 });
+
+const GlobalStyle = createGlobalStyle`
+    * {
+      outline: none;
+      box-sizing: border-box;
+      font-family: Roboto, sans;
+    }
+`;
 
 ReactDOM.render(
   <React.StrictMode>
